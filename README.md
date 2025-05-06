@@ -21,6 +21,16 @@ I have not provided any test code, but you can base yours on test code from
 other exercises. Your tests must check the correctness of the result of running
 the function and run automatically when you commit through a GitHub action.
 
+“I certify that I have listed all sources used to complete this exercise, including the use
+of any Large Language Models. All of the work is my own, except where stated
+otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is
+suspected, charges may be filed against me without prior notice.”-Andrew Thomas
+
+Sources
+#1-https://github.com/COSC3020/graph-search-ZachRenz/blob/main/code.test.js-Used this to figure out what I should do for my test code. I used a similar format to what was used here but created all my own graphs to verify the code.
+#2- Got Help from my roomate with pusdo code for writing the algorithm recursively.
+
+
 ## Runtime Analysis
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
