@@ -46,7 +46,7 @@ G3=[
     [0,7],
     []
 ]
-console.assert(JSON.stringify(DFS(G3,0,0))==JSON.stringify([0])
+console.assert(JSON.stringify(DFS(G3,0,0))==JSON.stringify([0]))
 console.assert(JSON.stringify(DFS(G3,3,4))==JSON.stringify([3,4]))
 console.assert(JSON.stringify(DFS(G3,5,0))==JSON.stringify([5,6,0]))
 console.assert(JSON.stringify(DFS(G3,5,7))==JSON.stringify([5,6,7]))
