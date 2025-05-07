@@ -35,3 +35,19 @@ console.assert(JSON.stringify(DFS(G2,0,5))==JSON.stringify([0,4,5]))
 console.assert(JSON.stringify(DFS(G2,1,5))==JSON.stringify([]))
 console.assert(JSON.stringify(DFS(G2,6,0))==JSON.stringify([]))
 console.assert(JSON.stringify(DFS(G2,1,3))==JSON.stringify([0,1,3]))
+//Graph with cycles and directed connections
+G3=[
+    [0],
+    [1],
+    [2],
+    [3,4],
+    [4,5,6,7],
+    [6,7],
+    [0,7],
+    []
+]
+console.assert(JSON.stringify(DFS(G3,0,0))==JSON.stringify([0])
+console.assert(JSON.stringify(DFS(G3,3,4))==JSON.stringify([3,4]))
+console.assert(JSON.stringify(DFS(G3,5,0))==JSON.stringify([5,6,0]))
+console.assert(JSON.stringify(DFS(G3,5,7))==JSON.stringify([5,6,7]))
+console.assert(JSON.stringify(DFS(G3,4,0))==JSON.stringify([4,5,6,0]))
