@@ -38,6 +38,18 @@ Sources
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
 
+# Answer
+
+To analyze the time complexity we will step through the algorithm step by step to figure out whats happening
+
+The first thing we do is create an array filled with zeros the length of the graph and call it Visited. Here every entry refers to if a node has been visited or not so we get $O(V)$ from this. Next we create an empty list which is of a constant time operation.
+
+Next we dive into the inner function called DFS_. Here is where the actual Deapth first search is occuring and we take in a node as a parameter. We feed it the start node.
+
+Once inside we first mark the node we fed the inner function as visited, this is a neglegable operation. Then we do a check to see if we found the node we are looking for, also of a constant time to perform. Next we run a for loop that goes through each edge within the supplied node and performs a recursive call on it as long as it hasn't been visited. Overall this encures a time complexity of $O(|V+E|)$ in the worst case because we have to check all nodes and all edges. Upon exiting the stacks we perform one more check to see if the node was found and then append to the return list if necessary.
+
+Overall this gives us a complexity of $$V+|V+E|=|V+E|\in \theta(|V+E|)$$
+
 ## Bonus
 
 Implement and analyze breadth-first search.
